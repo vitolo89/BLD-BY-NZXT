@@ -1,0 +1,71 @@
+$verde: #3DAEAD;
+
+.navbar{
+    background-color: $verde;
+    
+}
+
+.nav-item {
+    margin: 0 1.5rem;
+}
+
+.logo-white {
+    width: 5.2rem;
+    margin-left: 2rem;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    height: 2.9rem;
+}
+
+.login-singup{
+    
+    margin-top: 1.1rem;
+    font-size: 0.8rem;
+    width: 7rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-singup a {
+    font-size: .6rem;
+    color: $verde;
+    
+}
+
+.login-singup a:hover {
+    cursor: pointer;
+}
+
+
+
+
+.logo-black{
+    width: 4.4rem;
+    height: 1rem;
+    margin-left: 2.2rem;
+    margin-top: 1.4rem;
+}
+
+.nav-link {
+    color: white;
+    
+    
+}
+
+.btn-get-started {
+    border: white solid 1px;
+    color: white;
+    margin-right: 2rem;
+    border-bottom: solid;
+    width: 10rem;
+}
+
+.btn-get-started:hover {
+    background-color: white;
+    color: $verde;    
+    
+}
