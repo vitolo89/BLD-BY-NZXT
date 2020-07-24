@@ -66,14 +66,24 @@ nav .btn-get-started:hover {
     
 }
 
+nav .navbar-collapse .navbar-nav {
+
+    flex-direction: row;
+    width: 28rem;
+    justify-content: space-around;
+}
+
+
 nav .navbar-collapse .navbar-nav .nav-item {
-    margin: 0 1.5rem;
-    text-align: center;
+    text-align: center;    
+    width: max-content;
+    
 }
 
 nav .navbar-collapse .navbar-nav .nav-link {
     color: white;
-    font-weight: 500;    
+    font-weight: 400; 
+    font-size: 14px;   
     text-transform: uppercase;
     position: relative;
 }
@@ -91,69 +101,87 @@ nav .navbar-collapse .animation {
 }
 
 nav .nav-item:nth-child(1) {
-    width: 12rem;     
+    width: 5rem;     
+    
+    
     
 }
 nav .start-what, .nav-item:nth-child(1):hover~.animation{
-    width: 12rem;
-    left: 11rem;    
+    width: 6rem;
+    left: 10rem;    
+    
 }
 
 
 nav .nav-item:nth-child(2) {
-    width: 12rem;        
+    width: 9rem;
+    
+
 }
 
 .start-customer, .nav-item:nth-child(2):hover~.animation{
 
-    width: 12rem;
-    left: 25.5rem;
+    width: 9rem;
+    left: 17.5rem;
+    
 }
 
 nav .nav-item:nth-child(3) {
 
-    width: 12rem;
+    width: 4rem;
     left: 38.7rem;
+    
     
 }
 nav .start-support, .nav-item:nth-child(3):hover~.animation{
 
-    width: 12rem;
-    left: 41rem;
+    width: 4rem;
+    left: 28rem;
+    
 }
 
 nav .nav-item:nth-child(4) {
-    width: 12rem;    
+    width: 3rem;
+        
 }
 
 nav .start-faq, .nav-item:nth-child(4):hover~.animation{
 
-    width: 12rem;
-    left: 56rem;
+    width: 3rem;
+    left: 33.5rem;
+    
 }
 
-
-/** Media queries**/
-
-@media (min-width: 375px) and (max-width: 1199px){ 
+@media (max-width: 991.98px) { 
 
     nav .navbar-collapse .animation {
         display: none;
-        
+    }
+
+   
+    
+    nav .navbar-collapse {
+        padding-bottom: 1rem;
     }
 
     nav .navbar-collapse .navbar-nav {
+
+        margin: auto;
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
-    nav form {
-        display: flex;
-        justify-content: center;
+    nav .navbar-collapse form {
+
+        text-align: center ;
+
     }
 
-    nav form button {
-        margin: 0;
-        width: 20rem;
-    }
-}
+    nav .navbar-collapse form button  {
 
+        margin: auto ;
+
+    }
+ }
+ 
