@@ -47,6 +47,12 @@ nav button {
     border-color: transparent;
 }
 
+
+
+
+
+
+
 nav .logo-white {
     width: 5.2rem;
     margin-left: 2rem;
@@ -170,11 +176,14 @@ nav .start-faq, .nav-item:nth-child(4):hover~.animation{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 12rem;
     }
 
     nav .navbar-collapse form {
 
         text-align: center ;
+        width: 20rem;        
+        margin: auto;
 
     }
 
