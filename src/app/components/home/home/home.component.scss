@@ -1,4 +1,5 @@
 $verde: #3DAEAD;
+$gris: #626A6F;
 
 section {
     height: 100vh;
@@ -16,8 +17,7 @@ section .dark-container {
     align-items: center;
 }   
 
-section .gaming-pc-info{
-    
+section .gaming-pc-info{    
 
     display: flex;
     justify-content: space-around;
@@ -31,22 +31,20 @@ section .gaming-pc-info{
 section .gaming-pc-info .desktop-purple img{
     
     width: 29rem;
-    margin: 2rem;
-   
+    margin: 2rem;   
     
-}
-    
+}    
 
 section .gaming-pc-info .details {
     
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
     height: 25rem;
     
 }
 
 section .gaming-pc-info .details .bld-img {
+
     width: 25rem;
 }
 
@@ -99,47 +97,202 @@ section .gaming-pc-info .details .bld-text div button {
     font-size: .7rem;
 }
 
-
-
 section .gaming-pc-info .details .bld-text {
+    
+    color: white;
+    
+}
+
+/*SECOND SECTION*/
+
+
+.spects {
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    background-color: $gris;   
+    height: max-content;
+    padding: 4rem;
+}
+
+main .spects-type {
+    
+    display: flex;
+    justify-content: space-around;
+    width: 50%;           
+    align-items: center;      
+}
+
+main .spects-type article {
+    
+    display: flex; 
+    flex-direction: column;    
+    text-align: center;
+    color: white;
+    height: 22rem;
+    width: 50%;
+    
+}
+
+main .spects-type article .img-spect img {
+    
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 2rem;    
+    
+}
+
+main .spects-type article .info {
+    
+    width: 15rem;
+    margin: auto;
+    
+}
+
+main .spects-type article .info h1 {
+    text-transform: uppercase;
+    font-size: 2rem;    
+    
+}
+
+main .spects-type article div p {
+    font-size: 1rem;
+    width: 90%;
+    height: 5rem;    
+    margin: 1rem auto;
+}
+
+main .spects-type article a {
+    text-transform: uppercase;
+    text-decoration: none;
     color: white;
 }
 
 
 
-@media (max-width: 991px) { 
+/*SECOND GAMES*/
 
-    section .gaming-pc-info .details .bld-img {    
+section .games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+section .games .ninjas{
+    background-image: url('../../../../assets/ninja-player.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+    border-bottom: solid white 4px;
+}
+
+section .games .battle {
+    background-image: url('../../../../assets/Group9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;       
+}
+
+section .games .battle,
+section .games .ninjas{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+section .games .ninjas div,
+section .games .battle div {
+    text-align: center;
+}
+
+section .games .ninjas div img,
+section .games .battle div img {
+   margin-top: 2rem;
+}
+
+section .games .ninjas div a,
+section .games .battle div a {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+    
+}
+
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+}
+
+section .built {
+    border: solid red;
+}
+
+section .built .title h1 {
+    text-transform: uppercase;
+}
+
+section .built .experience-text p {
+    width: 28rem;
+}
+
+section .black-style {
+    border: solid green;
+}
+
+
+
+
+
+
+/*Media queries*/
+
+
+@media (max-width: 991px) { 
+/** STAR FIRST SECTION**/
+    section .gaming-pc-info .details .bld-img {         
        
        text-align: right;
     } 
 
    
-    section .gaming-pc-info .details {        
+    section .gaming-pc-info .details { 
+        
         align-items: center;
     }
 
-    section .gaming-pc-info .details .bld-img h5{
+    section .gaming-pc-info .details .bld-img h5{       
        
-        width: 18rem;         
-        
+        width: 18rem;                 
     }
 
-    section .gaming-pc-info .details .bld-text h1 {
+    section .gaming-pc-info .details .bld-text h1 {        
                   
-        margin: .5rem auto; 
-        
+        margin: .5rem auto;         
     }
 
-    section .gaming-pc-info .details .bld-text div  {
+    section .gaming-pc-info .details .bld-text div  {        
        
         width: 100%;       
         text-align: center;       
     }
+
+
   
  }
 
  @media (max-width: 927px) { 
+     /** STAR FIRST SECTION**/
 
     section .gaming-pc-info {
 
@@ -170,12 +323,82 @@ section .gaming-pc-info .details .bld-text {
     
 }
 
-@media (max-width: 817px) {
 
-    
 
+@media (max-width: 1230px) { 
+
+    .spects {
+        flex-direction: column;
+        padding: 4rem 0rem;
+    }
     
+    main .spects-type {
+        
+        width: 80%;        
+    }
+
+    main .spects-type {
+        margin-bottom: 2rem;
+    }
+
+    main .spects-type article div p {
+        
+        width: 16rem;
+        
+    }   
 
 }
 
 
+@media (max-width: 700px) { 
+
+    main .spects-type {
+        
+        flex-direction: column;  
+        justify-content: space-between;
+        height: 45rem;      
+    }
+
+    main .spects-type article {
+        
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    main .spects-type article .img-spect img {
+        margin: 0;
+    }   
+
+}
+
+@media (max-width: 1203px) { 
+
+    section .games {
+        flex-direction: column;
+        height: 100%;
+        
+    
+    }
+
+    section .games .ninjas{
+           
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 601px) {                     
+        
+    section .games .ninjas div h1,
+    section .games .battle div h1 {
+
+        font-size: 1.5rem;
+        
+    }   
+
+    section .games .ninjas div img,
+    section .games .battle div img {
+        width: 15rem;
+    }
+        
+}  
