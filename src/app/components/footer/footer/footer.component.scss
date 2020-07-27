@@ -1,0 +1,316 @@
+$purple: #B248B2;
+$blue: #408AE6;
+$green: #3DADAC;
+$yellow: #DBE440;
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+    height: max-content; 
+    background-color: black;
+}
+
+footer .main-info  {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 6rem;
+    width: 95%;      
+    margin: auto;
+    
+}
+
+footer .main-info .info-left ,
+footer .main-info .info-right {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+
+}
+
+
+
+footer .main-info div ul{
+
+    list-style: none;  
+    padding: 0;  
+
+}
+
+footer .main-info div h4 {
+
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 400;
+
+}
+
+footer .main-info ul li {
+
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 14px;
+    
+}
+
+
+footer .main-info .products ul li,
+footer .main-info .how-to ul li, 
+footer .main-info .contact ul li, 
+footer .main-info .store-misc ul li {
+    color: $purple;
+    font-size: 14px;
+}
+
+footer .main-info ul {
+    cursor: pointer;
+}
+
+
+footer .main-info .pc-monitoring ul li {
+    color: $blue;
+    font-size: 14px;
+}
+
+footer .main-info .bld-services ul li {
+
+    color: $green;
+    font-size: 14px;
+}
+
+
+.stay-in-touch{
+    display: flex;
+    flex-direction: column;
+    width: 60%;    
+    margin: auto;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+   
+}
+
+.stay-in-touch h1 span{
+    color: white;
+}
+
+.stay-in-touch h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #747778;
+}
+
+.stay-in-touch form input {
+    width: 100%;
+    text-align: center;
+    background: #363636;
+    border: none;
+    padding: .5rem;
+    border-radius: .4rem;
+    font-weight: 600;
+}
+
+.bottom-side {
+
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    margin-top: auto;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1rem;
+    color: $yellow;
+}   
+
+
+
+
+.bottom-side .bottom-logo{
+    
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    
+    
+}
+
+.bottom-side .bottom-logo h5 {
+    height: 2rem;
+    margin-top: 1.5rem;
+    font-size: .5rem;
+    margin-left: rem;
+    color: gray;
+}
+
+.bottom-side div h5 {
+    font-size: .9rem;
+}
+
+.bottom-side .bottom-logo {
+    width: 33%;
+}
+
+
+.bottom-side .privacy-icons {
+    width: 66%;
+}
+
+.bottom-side .privacy-icons .privacy,
+.bottom-side .privacy-icons .icons {
+    width: 50%;
+    
+}
+
+.bottom-side .privacy-icons .privacy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-side .privacy-icons .privacy {
+    display: flex;
+}
+
+.bottom-side .privacy-icons .privacy .language select {
+
+    border: none;
+    color: yellow;
+    background: transparent;
+    margin-left: .3rem;
+
+}
+
+.bottom-side .privacy-icons .icons {
+    display: flex;
+}
+
+.bottom-side .privacy-icons .icons div {
+
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
+.bottom-side .privacy-icons {
+    display: flex;
+}
+
+.privacy-icons .privacy div img {
+    width: 3rem;
+}
+
+.bottom-logo img:hover,
+.privacy-icons .privacy h5,
+.privacy-icons .privacy .language select,
+.icons div i{ 
+
+    cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 881px) { 
+
+    footer .main-info  {    
+     
+        padding-top: 4rem;      
+        
+    }
+
+
+ }
+
+
+
+@media (max-width: 600px) { 
+  
+    .privacy-icons {
+        
+        flex-direction: column;
+        align-items: center;
+        height: 5rem;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+    
+
+    .bottom-side .privacy-icons .icons {
+        width: 90%;
+    }
+
+    .stay-in-touch {
+       
+        width: 90%;
+    }
+
+    .bottom-logo  {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-side .bottom-logo h5 {
+      
+        margin-top: 1.5rem;
+       
+    }
+
+    .bottom-logo img {
+
+        width: 7rem;
+    }
+
+    .privacy-icons .privacy h5 {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+
+
+@media (max-width: 1200px) { 
+
+   .bottom-side {
+
+        flex-direction: column;
+        align-items: center;
+        height: 7rem;
+
+   }
+
+   .bottom-side .bottom-logo {
+     
+        width: 100%;
+
+   }
+
+   .bottom-side .privacy-icons {
+       width: 90%;
+       
+   }
+
+   .bottom-side .privacy-icons .privacy {
+       width: 100%;;
+   }
+
+   .bottom-side .privacy-icons .icons div {
+
+        
+        width: 100%;
+        
+    
+    }
+ }

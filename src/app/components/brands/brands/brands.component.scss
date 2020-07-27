@@ -1,17 +1,17 @@
 $verde: #3DAEAD;
 
-.slide-container {
+.image-container {
 
     border: solid;
     width: 100%;    
     display: flex;
     height: max-content;    
     margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+    margin-right: auto;    
     text-align: center;
     background-color: black;
     padding: 2rem;
+    border: solid black;    
     
 }
 
@@ -28,18 +28,9 @@ $verde: #3DAEAD;
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 100%;
-    
-    
-}
-
-
-.image-container {
-    display: flex;    
-    height: 14rem;
+    height: 100%;   
     
 }
-
 
 
 .image-container div img {
@@ -53,144 +44,41 @@ $verde: #3DAEAD;
     height: 60%;
 }
 
-.slider-image {
-    float: left;
-    margin: 0;
-    padding: 0;;
-}
-
-.button-container {
-    
-    text-align: center;    
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    margin-top: -3.5rem;
-    width: 100%;
-    
-}
-
-.button-container a {
-    
-    margin-top: 2rem;
-    display: none;
-}
-
-.slider-button {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background-color: white;
-}
-
-
-
-
-
 @media (max-width: 881px) { 
     
-    .button-container {
-        display: flex;        
-        width: 12%;
-    }
-    
-    .button-container a {
-        
-        background-color: $verde;
-        display: block;
-    }
-
+  
     .image-container {
-        display: inline;
-    }
-
-    .image-container .row1 div,
-    .image-container .row2 div {
-        display: flex;
-        flex-direction: column;
-        height: 12rem;
-        
-        
-}
-
-    .image-container .row1 div p,
-    .image-container .row2 div p {
-        margin: 1rem;       
-    }
-
-    #slider-image-1:target ~ .row1 {
-
-        display: none;        
-        
-    }
-    
-    #slider-image-2:target ~ .row2 {       
-     
-        display: none;
-        
-    
-    }
-
-    .slide-container {
-        
-        height: 18rem;
-        
-    }
-    
+        flex-direction: column;        
+    }    
    
 }
 
-@media (max-width: 649px) { 
+@media (max-width: 581px) { 
 
-    .row1,
-    .row2 {
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-        
-    }
+   .image-container .row1,
+   .image-container .row2 {
+       flex-direction: column;
+       height: 50%;
+   }
 
-    .button-container { 
+   .image-container .row1 div,
+   .image-container .row2 div {
+       width: 90%;
+   }
 
-        margin-top: -3.5rem; 
-        
-    }   
-    
-    .image-container .row1 div,
-    .image-container .row2 div {
-        align-items: center;
-        width: 100%;        
-    }
+   .image-container {
+    flex-direction: column;
+    height: 55rem;
+    justify-content: space-around;
+}
 
-    .slide-container {
-        height: 30rem;
-        
-    }   
+   
 
 }
 
 @media (max-width: 400px) { 
-
-    .slide-container {
-        height: 40rem;
-    }
-
-    .image-container {        
-        height: 33rem;
-    }
-
-    .image-container .row1 div,
-    .image-container .row2 div {
-        height: 15rem;     
-        
-    }
-
-    .button-container { 
-
-        margin-top: -6.5rem; 
-        
-    } 
+  
+   
 
 
 }

@@ -28,6 +28,22 @@ section .gaming-pc-info{
     
 }
 
+.btn-move {
+    animation: MoveUpDown 6s linear infinite;
+    
+    left: 58%;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 20px;
+    }
+  }
+
 section .gaming-pc-info .desktop-purple img{
     
     width: 29rem;
@@ -98,6 +114,13 @@ section .btn-green {
     text-align: center;
 }
 
+section .btn-green:hover{
+    cursor: pointer;
+    background-color: white;
+    color:$verde;
+    box-sizing: border-box;
+}
+
 section .gaming-pc-info .details .bld-text {
     
     color: white;
@@ -135,6 +158,16 @@ main .spects-type article {
     
 }
 
+main .spects-type article a {
+    width: max-content;
+    margin: auto;
+}
+
+main .spects-type article a:hover {
+    color: $verde;
+    transition: ease .3s;
+}
+
 main .spects-type article .img-spect img {
     
     width: 4rem;
@@ -143,10 +176,33 @@ main .spects-type article .img-spect img {
     
 }
 
+
+main .spects-type article:hover img {
+    
+    -webkit-transition: -webkit-transform .9s ease-in-out;   
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+    
+}
+
+
+
 main .spects-type article .info {
     
     width: 15rem;
     margin: auto;
+    
+}
+
+main .spects-type article img:hover {
+    
+    cursor: pointer;
+    
+}
+
+main .spects-type article .info:hover {
+    
+    cursor: pointer;
     
 }
 
@@ -254,6 +310,10 @@ section .built .experience-text p {
     width: 28rem;
 }
 
+section .built .btn-learn {
+    border: solid 1px $verde;
+}
+
 
 
 section .black-style img{
@@ -290,6 +350,11 @@ section .black-style img{
     width: 15rem;
     padding: 0.8rem;
     margin-top: .5rem;
+}
+
+.refurbished-info .btn-gray:hover {
+    background-color: $gris;
+    color: white;    
 }
 
 
@@ -343,9 +408,9 @@ section .black-style img{
         height: 20rem;
     }
 
-    section .built .btn-green{
+    section .built .btn-green {
         margin: auto;
-    }
+    }   
 
     section .built .title h1 {
         margin: auto;
