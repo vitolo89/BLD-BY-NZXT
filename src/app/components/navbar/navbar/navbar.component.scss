@@ -47,12 +47,6 @@ nav button {
     border-color: transparent;
 }
 
-
-
-
-
-
-
 nav .logo-white {
     width: 5.2rem;
     margin-left: 2rem;
@@ -158,12 +152,13 @@ nav .start-faq, .nav-item:nth-child(4):hover~.animation{
     
 }
 
+/* Media Queries */
+
 @media (max-width: 991.98px) { 
 
     nav .navbar-collapse .animation {
         display: none;
     }
-
    
     
     nav .navbar-collapse {

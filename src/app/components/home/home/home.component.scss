@@ -1,112 +1,100 @@
 $verde: #3DAEAD;
 $gris: #626A6F;
 
-section {
-    
+/*BLD GAMING PC'S MADE SIMPLE*/
+.dark-container {
     background-size: cover;
-    background-color: #212121; 
-}
-
-section .dark-container {
-    height: 100vh;    
-    background: url("../../../../assets/bg.png");  
-    background-repeat: no-repeat;
-    background-size: cover;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        background-color: #212121; 
 }   
 
-section .gaming-pc-info{    
+
+.gaming-pc {
+    
+    width: 100%;
+    display: flex;
+    background-color: #212121;     
+    background: url("../../../../assets/bg.png");  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.gaming-pc .desktop-purple {
+
+    width: 50%;    
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+
+.gaming-pc .desktop-purple img {
+
+    width: 50%;
+    
+}
+
+.gaming-pc .details {
 
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;    
-    margin: 2rem auto;
-    width: max-content;
+    width: 50%;
+    padding: 2rem;
     
 }
 
-.btn-move {
-    animation: MoveUpDown 6s linear infinite;
-    
-    left: 58%;
-    bottom: 0;
-  }
-  
-  @keyframes MoveUpDown {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 20px;
-    }
-  }
+.gaming-pc .details .bld-img {
 
-section .gaming-pc-info .desktop-purple img{
-    
-    width: 29rem;
-    margin: 2rem;   
-    
-}    
-
-section .gaming-pc-info .details {
-    
-    display: flex;
-    flex-direction: column;    
-    height: 25rem;
-    
+    width: 40%;
 }
 
-section .gaming-pc-info .details .bld-img {
-
-    width: 25rem;
+.gaming-pc .details .bld-img img {
+    width: 100%;
 }
 
-section .gaming-pc-info .details .bld-img img{
-          
-    padding: 1rem;
+.gaming-pc .details .bld-img h5 {
     
-}
-
-section .gaming-pc-info .details .bld-img h5{
-    
-    color: white;
+    width: 88%;
     text-align: right;
-    width: 16rem;
-    margin-top: -1rem;    
-    
-}
-
-section .gaming-pc-info .details .bld-img img {
-    
-    width: 23rem;
-    padding: 0;
-}
-
-section .gaming-pc-info .details .bld-text {
-    
-    width: 21rem;
-    margin-top: 2rem;
-    
-}
-
-section .gaming-pc-info .details .bld-text h1 {
+    margin: 0;
     color: white;
-    text-transform: uppercase;
-    font-size: 2rem;
-    width: 14rem;    
-    
+    margin-top: -1rem;
 }
 
-section .btn-green {
+.gaming-pc .details .bld-text {
+    
+    width: 56%;
+}
 
-    width: 10rem;
+.gaming-pc .details .bld-text h1 {
+
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+
+}
+
+.gaming-pc .details .bld-text p {
+
+    color: white;
+}
+
+.gaming-pc .details .btn-get-started {
+    
+    width: 30%;
+
+}
+
+.gaming-pc .details .btn-get-started button,
+.experience .built div button {
+    
+    width: 100%;
     padding: 0.8rem;
-    margin-top: 1rem;
     border-radius: 3px;
-    background-color: #3DAEAD;
+    background-color: $verde ;
     text-transform: uppercase;
     color: white;
     border: none;
@@ -114,216 +102,210 @@ section .btn-green {
     text-align: center;
 }
 
-section .btn-green:hover{
+.gaming-pc .details .btn-get-started:hover button,
+.experience .built div:hover button {
+
     cursor: pointer;
     background-color: white;
-    color:$verde;
-    box-sizing: border-box;
+    color:$verde;    
+    border: solid 1px $verde;
+    transition: ease .5s;
 }
 
-section .gaming-pc-info .details .bld-text {
-    
-    color: white;
-    
-}
 
-/*SECOND SECTION*/
+
+
+/*SPECTS SECTION*/
 
 
 .spects {
     display: flex;
-    justify-content: center;
-    align-items: center;        
-    background-color: $gris;   
-    height: max-content;
-    padding: 4rem;
+    
+    width: 100%;
+    background-color: $gris;
+    padding: 2rem;
+
 }
 
-main .spects-type {
-    
+.spects .spects-type {
+
     display: flex;
-    justify-content: space-around;
-    width: 50%;           
-    align-items: center;      
+    
+    width: 50%;
+
 }
 
-main .spects-type article {
+.spects .spects-type article {
     
-    display: flex; 
+    
+    width: 50%;
+    display: flex;
     flex-direction: column;    
-    text-align: center;
-    color: white;
-    height: 22rem;
+    align-items: center;
+}
+
+.spects .spects-type article .info {
+    
+    
     width: 50%;
     
 }
-
-main .spects-type article a {
-    width: max-content;
-    margin: auto;
+.spects .spects-type article .info h1{
+    
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.9rem;
+    margin-top: 1rem;
 }
 
-main .spects-type article a:hover {
+.spects .spects-type article .spects-text {
+    width: 73%;
+    margin-bottom: 1rem;
+}
+
+.spects .spects-type article div p{
+
+    color: white;    
+    margin: auto;    
+    text-align: center;
+    width: 90%;
+    font-size: 0.8rem;
+    
+}
+
+.spects .spects-type article a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.spects .spects-type article .img-spect img {
+    
+    width: 4rem;
+    height: 4rem;
+    
+}
+
+.spects-type article:hover img {
+
+        
+        -webkit-transition: -webkit-transform .9s ease-in-out;   
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+        
+}
+
+.spects .spects-type article a:hover {
     color: $verde;
     transition: ease .3s;
 }
 
-main .spects-type article .img-spect img {
-    
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 2rem;    
-    
-}
 
 
-main .spects-type article:hover img {
-    
-    -webkit-transition: -webkit-transform .9s ease-in-out;   
-    transform: rotateY(360deg);
-    transform-style: preserve-3d;
-    
-}
+/* GAMES*/
 
-
-
-main .spects-type article .info {
-    
-    width: 15rem;
-    margin: auto;
-    
-}
-
-main .spects-type article img:hover {
-    
-    cursor: pointer;
-    
-}
-
-main .spects-type article .info:hover {
-    
-    cursor: pointer;
-    
-}
-
-main .spects-type article .info h1 {
-    text-transform: uppercase;
-    font-size: 2rem;    
-    
-}
-
-main .spects-type article div p {
-    font-size: 1rem;
-    width: 90%;
-    height: 5rem;    
-    margin: 1rem auto;
-}
-
-main .spects-type article a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-}
-
-
-
-/*SECOND GAMES*/
-
-section .games {
+.games {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20rem;
+    justify-content: center;    
+    
 }
 
-section .games .ninjas{
+.games .ninjas{
     background-image: url('../../../../assets/ninja-player.jpg');
     background-repeat: no-repeat;
     background-size: cover;    
 }
 
-section .games .battle {
+.games .battle {
     background-image: url('../../../../assets/Group9.jpg');
     background-repeat: no-repeat;
     background-size: cover;       
 }
 
-section .games .battle,
-section .games .ninjas{
+.games .battle,
+.games .ninjas{
     
-    width: 100%;
-    height: 100%;
+    width: 100%;    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    color: white;
-    border-bottom: solid white 4px;
+    color: white;    
     text-transform: uppercase;
     
 }
 
-section .games .ninjas div,
-section .games .battle div {
+.games .ninjas div,
+.games .battle div {
     text-align: center;
 }
 
-section .games .ninjas div img,
-section .games .battle div img {
+.ames .ninjas div img,
+.games .battle div img {
    margin-top: 2rem;
 }
 
-section .games .ninjas div a,
-section .games .battle div a {
+.games .ninjas div a,
+.games .battle div a {
     text-decoration: none;
     color: white;
     font-size: .8rem;
     
 }
 
+.games .ninjas div a:hover,
+.games .battle div a:hover {
+
+    color: $verde;
+    transition: ease .3s;
+    
+}
+
+
+/*SECTION BUILT BY EXPERTS*/
 
 .experience {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    padding: 2rem;
-    width: 96%;
     margin: auto;
+    padding: 2rem;
 }
 
-section .built {
+.experience .built {
+
+    padding: 2rem;   
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+   
+}
+
+.experience .built .learn-btn {
+    width: 34%;
 }
 
 
-
-section .built .title h1 {
+.built .title h1 {
     text-transform: uppercase;
     width: 29rem;
     font-weight: 400;
 }
 
-section .built .experience-text p {
+.built .experience-text p {
     width: 28rem;
 }
 
-section .built .btn-learn {
-    border: solid 1px $verde;
-}
 
-
-
-section .black-style img{
+.black-style img{
     
     width: 24rem;
     
 }
 
-
-/*Refurbished info*/
+ /*REFURBISHED BUILDS*/
 
 .refurbished-info {
 
@@ -360,212 +342,254 @@ section .black-style img{
 
 
 
+/*MEDIA QUERIES*/
 
 
-/*Media queries*/
+@media (max-width: 375px) {    
 
-
-@media (max-width: 455px) {
-
-    section .built .title h1 {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
-    section .built .experience-text {
-        width: 24rem;
-        margin: auto;
-    }
-
-    section .black-style img{
-    
-        width: 18rem;
+    .gaming-pc .desktop-purple img {
+        
+        width: 100%;
         
     }
 
-    .refurbished-info h1 {
-    
-       font-size: 2rem;
-    }
-    
-    .refurbished-info .btn-secondary {
-        width: 12rem;
-    padding: 0.5rem;
-
+    .gaming-pc .details .bld-img {
+        
+        width: 90%;
     }
 
-}
+    .gaming-pc .details .bld-text {
 
-
-@media (max-width: 856px) {
-
-    .experience {
-        flex-direction: column;
-    }
-
-    section .built {
+        width: 100%;
         text-align: center;
-        height: 20rem;
     }
 
-    section .built .btn-green {
-        margin: auto;
-    }   
+    .gaming-pc .details .bld-text p {
 
-    section .built .title h1 {
-        margin: auto;
-    }
-    
-    section .built .experience-text p {
-        width: 20rem;
-        margin: auto;
+        font-size: .9rem;
     }
 
+    .games .ninjas div img,
+    .games .battle div img {
+        width: 90%;
+    }
 
 }
 
+@media (max-width: 411px) {
 
-@media (max-width: 991px) { 
-/** STAR FIRST SECTION**/
-    section .gaming-pc-info .details .bld-img {         
-       
-       text-align: right;
-    } 
-
-   
-    section .gaming-pc-info .details { 
+    .gaming-pc .desktop-purple img {
         
+        width: 100%;
+        
+    }
+
+    .gaming-pc .desktop-purple  {
+
+        padding: 2rem 2rem 0rem 2rem;
+    }
+
+    .spects .spects-type {
+
+        flex-direction: column;
         align-items: center;
     }
 
-    section .gaming-pc-info .details .bld-img h5{       
-       
-        width: 18rem;                 
+    .spects .spects-type article .img-spect img {
+        
+        width: 5rem;
+        height: 5rem;
+        
     }
 
-    section .gaming-pc-info .details .bld-text h1 {        
-                  
-        margin: .5rem auto;         
+    .spects .spects-type article {
+
+        width: 100%;
+        padding: 1rem 0rem 1rem 0rem;
     }
 
-    section .gaming-pc-info .details .bld-text div  {        
-       
-        width: 100%;       
-        text-align: center;       
-    }
+    .games .ninjas div h1,
+    .games .battle div h1 {
 
-
-  
- }
-
- @media (max-width: 927px) { 
-     /** STAR FIRST SECTION**/
-
-    section .gaming-pc-info {
-
-        display: flex;
-        flex-direction: column;        
-        margin-top: 5rem;
-    }
-
-    section .gaming-pc-info .desktop-purple img{
+        font-size: 2rem;
     
-        width: 18rem;
-        margin: 2rem;          
     }
 
-    section .gaming-pc-info .details .bld-img img {
-        width: 20rem;
-    }
-
-    section .gaming-pc-info .details .bld-text h1 {
-                  
-        margin: .5rem auto; 
+    .experience .built .title h1 {
+        
         font-size: 1.5rem;
-        text-align: center;
-        
+        width: 100%;
     }
 
-    
-    
-}
-
-
-
-@media (max-width: 1230px) { 
-
-    .spects {
-        flex-direction: column;
-        padding: 4rem 0rem;
-    }
-    
-    main .spects-type {
-        
-        width: 80%;        
-    }
-
-    main .spects-type {
-        margin-bottom: 2rem;
-    }
-
-    main .spects-type article div p {
-        
-        width: 16rem;
-        
-    }   
-
-}
-
-
-@media (max-width: 700px) { 
-
-    main .spects-type {
-        
-        flex-direction: column;  
-        justify-content: space-between;
-        height: 45rem;      
-    }
-
-    main .spects-type article {
+    .experience .built .experience-text p {
         
         width: 100%;
-        height: 20rem;
+
+    }
+
+    .experience .built .experience-text p {
+
+        width: 100%;
+    }
+
+    .experience .built .learn-btn {
+        width: 100%;
+    }
+
+    .experience .black-style,
+    .experience .black-style img {
+
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .gaming-pc {
+    
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .gaming-pc .desktop-purple {
+       
+        justify-content: center; 
+        width: 65%;
+        padding-bottom: 0;
+    
+    }
+
+    .gaming-pc .details {
+
+        width: 100%;
+        align-items: center;
+    }
+
+    .gaming-pc .details .bld-text p {
+
+        text-align: center;
+    }
+
+    .spects .spects-type {
+
+        margin-bottom: 2rem;
+    }
+    .spects .spects-type article .info {
+
+        width: 80%;
+    }
+
+    .experience {
+
+        flex-direction: column;
+    }
+
+    .experience .built {
+
+        width: 100%;
+        align-items: center;
+    }
+
+    .experience .built .title {
+        
+        width: 100%;        
+        text-align: center;
+    }
+    
+    .experience .built .title h1 {
+        
+        text-align: center;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    
+    .experience .built .experience-text {
+        
+        width: 100%;
+        text-align: center;
+    }
+    
+    .experience .built .experience-text p {
+
+        margin: auto;
         margin-bottom: 1rem;
     }
 
-    main .spects-type article .img-spect img {
-        margin: 0;
-    }   
-
+    .refurbished-info h1 {
+        
+        font-size: 2rem;
+    }
 }
 
-@media (max-width: 1203px) { 
 
-    section .games {
-        flex-direction: column;
-        height: 100%;
+
+@media (max-width: 1024px) {
+
+    .gaming-pc .desktop-purple img {
         
+        width: 70%;
+        
+    }
+
+    .gaming-pc .details .bld-img {
+        
+        width: 60%;
+    }
+
+    .gaming-pc .details .bld-text {
+        
+        width: 75%;
+    }
+
+    .gaming-pc .details .btn-get-started {
+    
+        width: 40%;
     
     }
 
-    section .games .ninjas{
-           
-        border-bottom: none;
+
+    .spects {
+
+        flex-direction: column;
+        align-items: center;
     }
+
+    .spects .spects-type {
+        
+        width: 100%;
+    }
+
 }
 
-@media (max-width: 601px) {                     
-        
-    section .games .ninjas div h1,
-    section .games .battle div h1 {
 
-        font-size: 1.5rem;
-        
-    }   
+@media (max-width: 1366px) {
 
-    section .games .ninjas div img,
-    section .games .battle div img {
-        width: 15rem;
+    .spects .spects-type article .info {
+
+        width: 70%;
     }
+
+    .games {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .games .ninjas {
         
-}  
+        background-position: center center;    
+    }
+    
+    .games .battle {
+
+        background-position: center top;
+
+    }    
+
+}
+
+
+
+
+
